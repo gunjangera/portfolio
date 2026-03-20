@@ -293,14 +293,37 @@ body {
 
 @media (max-width: 768px) {
 
+  .header {
+    padding: 10px 15px;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .menu {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
   .menu button {
-    padding: 8px 14px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 13px;
   }
 
   .hero-buttons {
     flex-direction: column;
     width: 100%;
+  }
+
+  .hero {
+    padding-top: 160px ; 
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .hero-left {
+    max-width: 100%;
   }
 
   .btn-primary, .btn-outline {
@@ -310,13 +333,22 @@ body {
 
 @media (max-width: 480px) {
 
+  .header {
+    padding: 8px 10px;
+    gap: 5px;
+  }
+
+  .hero {
+    padding-top: 180px ;
+  }
+
   .menu {
     gap: 8px;
   }
 
   .menu button {
-    padding: 6px 12px;
-    font-size: 13px;
+    padding: 6px 10px;
+    font-size: 12px;
   }
 
   .hero-left h2 {
