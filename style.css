@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
@@ -10,10 +11,11 @@ body {
 }
 
 .header {
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 40px;
+  padding: 15px 80px;
   background: linear-gradient(90deg, #A136FF, #5E69E5);
   position: fixed;
   width: 100%;
@@ -25,8 +27,10 @@ body {
 .name {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
+  margin-top: 20px;
 }
+
 
 .icon {
   width: 26px;
@@ -40,20 +44,20 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
 }
 
 .menu button {
   padding: 10px 22px;
   border: none;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 6px;
   cursor: pointer;
   background: linear-gradient(90deg, #A136FF, #5E69E5);
-  transition: 0.3s;
+  transition: .3s;
   white-space: nowrap;
 }
+
 
 .menu button:hover {
   background: #ff6b6b;
@@ -64,8 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  padding: 140px 100px 100px;
+  padding: 140px 40px 80px;
   background: linear-gradient(90deg, #ff7665, #c06f7b, #4fa8ab);
   color: white;
   width: 100%;
@@ -74,8 +77,13 @@ body {
 }
 
 .hero-left {
-  max-width: 100%;
-  text-align: center;
+  width: 50%;
+}
+
+.hero-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-left h2 {
@@ -127,13 +135,13 @@ body {
   background: rgba(255, 255, 140, 0.2);
 }
 
+
 .profile-img {
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   border: 3px solid #ffdf63;
   object-fit: cover;
-  transition: .3s;
 }
 
 .profile-img:hover {
@@ -201,6 +209,11 @@ body {
   color: #111;
 }
 
+.project-card h2 {
+  color: white;
+  padding: 10px;
+}
+
 .project-card:hover {
   transform: translateY(-6px);
   background: linear-gradient(90deg, #ff5252, #4ea8a8);
@@ -229,7 +242,6 @@ body {
   border-radius: 14px;
   margin-bottom: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: .3s;
 }
 
 .ed:hover {
@@ -259,41 +271,30 @@ body {
 }
 
 @media (max-width: 992px) {
-
   .header {
     flex-direction: column;
-    gap: 12px;
     padding: 15px 20px;
     text-align: center;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
   }
 
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 140px 40px 60px;
+    padding: 140px 30px 60px;
   }
 
-  .hero-left {
-    max-width: 100%;
+  .hero-left,
+  .hero-right {
+    width: 100%;
   }
 
   .profile-img {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
   .section, .education {
     padding: 40px 40px;
-  }
-
-  .projects-container {
-    flex-direction: column;
   }
 
   .contact-wrapper {
@@ -301,61 +302,18 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-
-  .header {
-    padding: 12px 15px;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .menu {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .menu button {
-    padding: 7px 14px;
-    font-size: 13px;
-  }
-
-  .hero {
-    padding-top: 220px !important;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .hero-left {
-    max-width: 100%;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn-primary, .btn-outline {
-    width: 100%;
-  }
-}
-
 @media (max-width: 480px) {
-
   .header {
     padding: 10px 12px;
-    gap: 5px;
-  }
-
-  .hero {
-    padding-top: 240px !important;
   }
 
   .menu button {
-    padding: 6px 10px;
     font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .hero {
+    padding: 170px 15px 50px;
   }
 
   .hero-left h2 {
@@ -363,7 +321,7 @@ body {
   }
 
   .hero-left pre {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .profile-img {
