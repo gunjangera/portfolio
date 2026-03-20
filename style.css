@@ -19,6 +19,7 @@ body {
   width: 100%;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .name {
@@ -36,6 +37,10 @@ body {
   display: flex;
   gap: 40px;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .menu button {
@@ -47,6 +52,7 @@ body {
   cursor: pointer;
   background: linear-gradient(90deg, #A136FF, #5E69E5);
   transition: 0.3s;
+  white-space: nowrap;
 }
 
 .menu button:hover {
@@ -58,13 +64,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   padding: 140px 100px 100px;
   background: linear-gradient(90deg, #ff7665, #c06f7b, #4fa8ab);
   color: white;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .hero-left {
-  max-width: 50%;
+  max-width: 100%;
+  text-align: center;
 }
 
 .hero-left h2 {
