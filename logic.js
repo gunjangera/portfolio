@@ -22,3 +22,16 @@ let contactBtn = document.querySelector("#contact-btn");
 contactBtn.addEventListener("click", () => {
     document.querySelector(".contact").scrollIntoView({ behavior: "smooth" });
 });
+
+let btnPrimary = document.querySelector(".btn-primary");
+btnPrimary.addEventListener("click", () => {
+    document.querySelector(".project").scrollIntoView({ behavior: "smooth" });
+});
+
+// document.getElementById("btn-outline").addEventListener("click", () => {
+//     window.open("resume.jpeg", "_blank"); 
+// });
+
+function openImg() {
+    window.location.href = "resume.jpeg";
+}
