@@ -15,7 +15,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 80px;
+  padding: 15px 50px;
   background: linear-gradient(90deg, #A136FF, #5E69E5);
   position: fixed;
   width: 100%;
@@ -27,26 +27,17 @@ body {
 .name {
   display: flex;
   align-items: center;
-  gap: 10px;
   margin-top: 20px;
 }
 
-
-.icon {
+ .icon {
   width: 26px;
   height: 26px;
-}
-
-.menu {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
+} 
 
 .menu button {
+  gap: 60px;
+  margin-top: 0px;
   padding: 10px 22px;
   border: none;
   color: #fff;
@@ -63,6 +54,7 @@ body {
   background: #ff6b6b;
   transform: translateY(-3px);
 }
+
 
 .hero {
   display: flex;
