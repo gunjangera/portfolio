@@ -33,5 +33,5 @@ btnPrimary.addEventListener("click", () => {
 // });
 
 function openImg() {
-    window.location.href = "resume.jpeg";
+    window.location.href = "newresume.jpeg";
 }
